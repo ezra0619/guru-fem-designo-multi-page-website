@@ -1,0 +1,32 @@
+
+@import "variables";
+
+:host {
+    display: block;
+}
+
+.mainBubbleContainer {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    color: $white;
+    border-radius: $containerBorderRadius;
+    background-image: url(/assets/bg-pattern-small-circle.svg);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: $peach;
+
+    .mainBubbleResourceContainer {
+        img {
+            height: contain;
+            width: auto;
+        }
+    }
+
+    .mainBubbleInfoContainer {
+        height: auto;
+        padding: 50px;
+        align-self: center;
+    }
+}

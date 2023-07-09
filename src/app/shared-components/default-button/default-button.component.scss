@@ -1,0 +1,18 @@
+@import "variables";
+
+:host {
+    display: block;
+}
+
+.defaultButton {
+    padding: $spacing-medium-small $spacing-medium;
+    background-color: $white;
+    border-radius: $btnBorderRadius;
+    border-color: transparent;
+    letter-spacing: 1px;
+
+    &:hover{
+        background-color: $lightPeach;
+        color: $white;
+    }
+}
