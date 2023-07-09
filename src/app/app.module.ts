@@ -10,6 +10,7 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LargeInfoBubbleComponent } from './shared-components/large-info-bubble/large-info-bubble.component';
 import { DefaultButtonComponent } from './shared-components/default-button/default-button.component';
+import { CardPagesDisplayComponent } from './shared-components/card-pages-display/card-pages-display.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { DefaultButtonComponent } from './shared-components/default-button/defau
     AboutPageComponent,
     LargeInfoBubbleComponent,
     DefaultButtonComponent,
+    CardPagesDisplayComponent,
   ],
   imports: [
     BrowserModule,

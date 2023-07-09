@@ -33,6 +33,14 @@ h3 {
 .largeMarginBottom {
     margin-bottom: 150px;
 }
-// Regular 400
-// Medium 500
+
+.row,
+.col,
+.col-8,
+.col-10,
+.col-12,
+.col-sm-12,
+.col-md-10 {
+    padding: 0;
+}
 

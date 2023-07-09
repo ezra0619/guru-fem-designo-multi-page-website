@@ -1,0 +1,78 @@
+@import "variables";
+
+:host {
+    display: block;
+}
+
+.mainCardsDisplayContainer {
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    .leftCardsContainer,
+    .rightCardsContainer {
+        height: 100%;
+        width: 50%;
+    }
+
+    .leftCardsContainer {
+        margin-right: $spacing-medium;
+    }
+    
+    .rightCardsContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secondCardContainer {
+        margin-top: 10px;
+    }
+
+    .secondCardContainer,
+    .firstCardContainer {
+        height: 50%;
+    }
+
+    .leftCardsContainer {
+        background-image: url(/assets/image-web-design-large.jpg);
+   }
+
+   .firstCardContainer {
+        background-image: url(/assets/image-app-design.jpg);
+    }
+
+    .secondCardContainer {
+        background-image: url(/assets/image-graphic-design.jpg);
+    }
+
+    .leftCardsContainer,
+    .firstCardContainer,
+    .secondCardContainer {
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: $containerBorderRadius;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $white;
+        text-align: center;
+        position: relative;
+   }
+
+    .leftCardsContainer:hover::before,
+    .firstCardContainer:hover::before,
+    .secondCardContainer:hover::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(231, 129, 107, 0.6);
+        border-radius: $containerBorderRadius;
+        z-index: 1;
+    }
+}
