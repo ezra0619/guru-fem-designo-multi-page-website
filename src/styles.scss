@@ -38,9 +38,21 @@ h3 {
 .col,
 .col-8,
 .col-10,
+.col-11,
 .col-12,
+.col-sm-10,
+.col-sm-11,
 .col-sm-12,
-.col-md-10 {
-    padding: 0;
+.col-md-10,
+.col-md-12 {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0;
+
 }
 
+.row > * {
+    margin: 0;
+    padding: 0;
+}
