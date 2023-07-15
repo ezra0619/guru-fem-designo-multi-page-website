@@ -50,6 +50,11 @@
         .navTextContainer {
             color: $white;
             z-index: 2;
+
+            p {
+                letter-spacing: 3px;
+                margin-bottom: 0;
+            }
         }
    }
 
@@ -83,5 +88,17 @@
         background-color: rgba(231, 129, 107, 0.6);
         border-radius: $containerBorderRadius;
         z-index: 1;
+    }
+}
+
+.arrowContainer {
+    margin-left: $spacing-medium;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+        height: 10px;
+        width: auto;
     }
 }
