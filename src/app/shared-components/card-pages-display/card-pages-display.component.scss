@@ -44,9 +44,29 @@
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: $containerBorderRadius;
-        color: $white;
         text-align: center;
         position: relative;
+
+        .navTextContainer {
+            color: $white;
+            z-index: 2;
+        }
+   }
+
+   .leftCardsContainer:before,
+   .firstCardContainer:before,
+   .secondCardContainer::before {
+       content: "";
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: rgba(0, 0, 0, 0.5);
+       border-radius: $containerBorderRadius;
+       z-index: 1;
    }
 
     .leftCardsContainer:hover::before,
